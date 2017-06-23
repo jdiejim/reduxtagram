@@ -10,4 +10,4 @@ function commentsReducer (state = [], action) {
   }
 }
 
-export default CommentsReducer;
+export default commentsReducer;

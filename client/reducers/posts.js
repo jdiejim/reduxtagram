@@ -10,4 +10,4 @@ function postsReducer (state = [], action) {
   }
 }
 
-export default PostsReducer;
+export default postsReducer;
