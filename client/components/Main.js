@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-const Main = () => {
-  return (
-    <main>
-      <h1>
-        <Link to="/">Reduxtagram</Link>
-      </h1>
-    </main>
-  )
+class Main extends Component {
+  render() {
+    return (
+      <main>
+        <h1>
+          <Link to="/">Reduxtragram</Link>
+        </h1>
+        {React.cloneElement(this.props.children, this.props)}
+      </main>
+    )
+  }
 }
 
 export default Main;
