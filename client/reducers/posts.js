@@ -2,10 +2,11 @@ import { INCREMENT_LIKES, ADD_COMMENT, REMOVE_COMMENT } from '../constants';
 
 function postsReducer (state = [], action) {
   switch (action.type) {
-    case ADD_COMMENT:
-      return state;
+    case INCREMENT_LIKES:
+      const newState = [...state];
+      newState[action.index].likes++;
+      return newState;
     default:
-      console.log(state, action);
       return state;
   }
 }

@@ -5,7 +5,6 @@ function commentsReducer (state = [], action) {
     case ADD_COMMENT:
       return state;
     default:
-      console.log(state, action);
       return state;
   }
 }
