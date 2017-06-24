@@ -1,4 +1,4 @@
-import { INCREMENT_LIKES, ADD_COMMENT, REMOVE_COMMENT } from '../constants';
+import { INCREMENT_LIKES } from '../constants';
 
 function postsReducer (state = [], action) {
   switch (action.type) {
